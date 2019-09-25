@@ -32,7 +32,7 @@ h1 span:last-child {
     color: #44B0DE;
 }
 
-ul {
+header ul {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
@@ -44,12 +44,29 @@ nav {
     margin: 0 55px 0 0 ;
 }
 
-li {
+header li {
     margin: 0 25px;
+}
+
+header li:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
 }
 
 main {
     height: 80vh;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    list-style: none;
+    height: 80%;
+}
+
+main li {
+    margin: 0;
 }
 
 footer {
@@ -57,7 +74,3 @@ footer {
     background-color: #BFBFE0;
 }
 
-li:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-in;
-}
