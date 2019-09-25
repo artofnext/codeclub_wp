@@ -1,5 +1,6 @@
+
 body {
-    
+    font-family: Roboto, Arial, sans-serif;
 }
 
 .container {
@@ -19,6 +20,16 @@ header {
 
 h1 {
     margin: 0 0 0 80px;
+    color: #E75E5B;
+    font-size: 4em;
+}
+
+h1 span {
+    color: #3F1F46;
+}
+
+h1 span:last-child {
+    color: #44B0DE;
 }
 
 ul {
