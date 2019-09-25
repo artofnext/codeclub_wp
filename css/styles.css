@@ -54,7 +54,7 @@ header li:hover {
 }
 
 main {
-    height: 80vh;
+    height: 78.5vh;
 }
 
 main ul {
@@ -65,12 +65,29 @@ main ul {
     height: 80%;
 }
 
+main ul:hover li:not(:hover){
+    filter: grayscale(50%);
+    transform: scale(0.95);
+    transition: all 0.2s ease-in;
+}
+
 main li {
     margin: 0;
+    transition: all 0.2s ease-in;
+}
+
+main li:hover {
+    /* transform: scale(1.1); */
+    transition: all 0.2s ease-in;
 }
 
 footer {
     height: 84px;
     background-color: #BFBFE0;
+    color: #3F1F46;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
