@@ -53,7 +53,7 @@ header li:hover {
 }
 
 main {
-    height: 78.5vh;
+    /* height: 78.5vh; */
     /* display: flex;
     justify-content: center;
     align-items: flex-end; */
@@ -66,6 +66,8 @@ main {
     display: flex;
     height: 70vh;
     position: relative;
+    
+
 }
 
 .picture {
@@ -77,6 +79,7 @@ main ul {
     justify-content: space-evenly;
     align-items: flex-end;
     list-style: none;
+    margin-bottom: 0;
 }
 
 main ul:hover li:not(:hover){
@@ -91,7 +94,7 @@ main ul:hover li:not(:hover){
 
 main li:nth-child(2):hover #center_outline_bulb {
     visibility: hidden;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
     transform: scale(0.8);
 }
 
@@ -102,7 +105,7 @@ main li .bulb {
 main li:hover .bulb {
     visibility: visible;
     transition: all 0.5s ease-out;
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 
 main li {
@@ -117,7 +120,7 @@ main li:hover {
 
 .bulb {
     position: absolute;
-    left: 0;
+    left: -10px;
     top: 50px;
 }
 
@@ -127,6 +130,29 @@ main li:hover {
     top: 60px;
     width: 260px;
     line-height: 1.5;
+}
+
+.picture {
+    /* height: 40vh; */
+}
+
+#shape-rectangular {
+    width: 90%;
+    height: 20px;
+    background-color: #245FAC;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#center_outline_bulb {
+    left: -100px;
+    top: 20px;
+}
+
+#right_blue_bulb {
+    left: -80px;
+    top: 30px;
 }
 
 #text_left_blue_bulb {
@@ -143,7 +169,7 @@ main li:hover {
     width: 300px;
     line-height: 1.3;
     display: block;
-    transform: rotateY(30deg);
+    /* transform: rotateY(30deg); */
 }
 
 #text_center_blue_bulb {
@@ -151,6 +177,14 @@ main li:hover {
     font-size: 1.5em;
     top: 10px;
     line-height: 1.3;
+}
+
+#text_right_blue_bulb {
+    color: #245FAC;
+    top: 30px;
+    left: 35px;
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 footer {
